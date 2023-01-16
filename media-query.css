@@ -1,6 +1,60 @@
-@media (max-width: 700px) {
+
+@media (max-width: 991px){
+    .fa-bars{
+        color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    display:flex !important;
+   }
+   .center{
+    /* background-color: aqua; */
+    align-items: center !important;
+   }
+   header .center button{
+    align-self: center !important;
+    
+ }
+}
+@media (max-width: 741px){
     header{
-        padding-left:10px !important; 
+        padding-left:20px !important; 
         padding-right: 10px !important; 
     }
 }
+@media (max-width: 580px){
+    header .center h1 {
+         font-size: 4rem !important;
+         padding-bottom: 10px;
+      }
+      header .center h4{
+         font-size: 1.3rem !important;
+         line-height: 45px;
+      }
+     header .center button a{
+         color: #fff;
+         font-size: .8rem !important;
+         letter-spacing: 0.1em;
+      }
+      header .center button{
+         padding: 10px 20px !important;
+     }
+}
+@media (max-width: 500px){
+    header .center h1 {
+         font-size: 3rem !important;
+         padding-bottom: 10px;
+      }
+      header .center h4{
+         font-size: 1.1rem !important;
+         line-height: 45px;
+      }
+     header .center button a{
+         color: #fff;
+         font-size: .6rem !important;
+         letter-spacing: 0.1em;
+      }
+      header .center button{
+         padding: 5px 15px !important;
+     }
+}
+    

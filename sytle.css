@@ -1,6 +1,15 @@
 @import url(./media-query.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+   --font-family-anton: 'Roboto', sans-serif;
+}
+*{
+   font-family: var(--font-family-anton) !important;
+}
 header{
-    background-color: blue;
+   background: linear-gradient(105.89deg, rgba(0, 0, 0, 0.37) 5.05%, rgba(0, 0, 0, 0.15) 112.97%), url(./img/header-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
     padding: 20px 100px;
 }
@@ -10,7 +19,11 @@ a{
   header nav .nav-link{
     color: #aaa!important;
  }
-  
+ header nav .nav-link:hover{
+   color: #fff !important; 
+    transform: scale(1.1);
+    transition: all 100ms ease  ;
+ }
  .center{
     display: flex;
     flex-direction: column;
@@ -33,12 +46,31 @@ header .center button{
    
  }
  header .center h1{
-    font-size: 60px;
-    font-weight: 800;
+  
+   font-style: normal;
+   font-weight: 800;
+   font-size: 5rem;
+   line-height: 151px;
+    
     padding-bottom: 10px;
+ }
+ header .center h4{
+  
+font-style: normal;
+font-weight: 700;
+font-size: 1.87rem;
+line-height: 45px;
+letter-spacing: 0.1em;
  }
 header .center button a{
     color: #fff;
+    
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 25px;
+text-align: center;
+letter-spacing: 0.1em;
  }
 
  .overlay-links{
@@ -68,7 +100,7 @@ header .center button a{
     color: #aaa; 
     font-size: 35px;
  }
- .overlay .nav-links a:hover , .fa-xmark:hover,header nav .nav-link:hover{
+ .overlay .nav-links a:hover , .fa-xmark:hover{
     color: #fff !important; 
     transform: scale(1.1);
     transition: all 500ms ease  ;
@@ -99,6 +131,7 @@ header .center button a{
     color: #fff;
     font-size: 30px;
     cursor: pointer;
+    display: none;
    }
    
  
