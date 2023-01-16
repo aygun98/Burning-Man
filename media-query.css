@@ -20,6 +20,10 @@
         padding-left:20px !important; 
         padding-right: 10px !important; 
     }
+    header .center h1 {
+        font-size: 4.5rem !important;
+        padding-bottom: 10px;
+     }
 }
 @media (max-width: 580px){
     header .center h1 {
