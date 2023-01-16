@@ -3,9 +3,7 @@
 :root{
    --font-family-anton: 'Roboto', sans-serif;
 }
-*{
-   font-family: var(--font-family-anton) !important;
-}
+
 header{
    background: linear-gradient(105.89deg, rgba(0, 0, 0, 0.37) 5.05%, rgba(0, 0, 0, 0.15) 112.97%), url(./img/header-bg.png);
     background-size: cover;
@@ -13,11 +11,16 @@ header{
     height: 100vh;
     padding: 20px 100px;
 }
+.navbar-brand{
+   padding-right: 49px;
+}
 a{
     text-decoration: none;
 }
   header nav .nav-link{
+   font-family: var(--font-family-anton);
     color: #aaa!important;
+    padding-right: 30px !important;
  }
  header nav .nav-link:hover{
    color: #fff !important; 
@@ -42,6 +45,7 @@ header .center button{
     
  }
  header .center h4, header .center h1{
+   font-family: var(--font-family-anton);
     color: #fff;
    
  }
@@ -63,6 +67,7 @@ line-height: 45px;
 letter-spacing: 0.1em;
  }
 header .center button a{
+   font-family: var(--font-family-anton);
     color: #fff;
     
 font-style: normal;
@@ -93,7 +98,7 @@ letter-spacing: 0.1em;
     overflow-x: hidden;
    
     /* transition: width 1.2s ease-in, heigth 1.2s ease-in; */
-    transition: width 1s ease;
+    transition: width 1s ease-in;
  }
  
  .overlay .nav-links a, .fa-xmark{
@@ -118,7 +123,7 @@ letter-spacing: 0.1em;
     background-color: rgb(255, 253, 253);
   
  }
- .fa-xmark{
+ .overlay .fa-xmark{
     position: absolute;
     top: 20px;
     right: 20px;
