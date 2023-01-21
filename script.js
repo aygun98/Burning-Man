@@ -4,14 +4,16 @@ const barsbtn = document.querySelector('.fa-bars')
 const xmarkBagla = document.querySelector('.fa-xmark')
 const overlay = document.querySelector('.overlay')
 
-barsbtn.addEventListener('click', function () {
+barsbtn.addEventListener('click', overlayYarat )
+function overlayYarat () {
 
     overlay.classList.add('aktiv')
-})
+}
 
-xmarkBagla.addEventListener('click', function () {
+xmarkBagla.addEventListener('click', overlaySil )
+function overlaySil () {
     overlay.classList.remove('aktiv')
-})
+}
 
 
 // TYPING EFFECT

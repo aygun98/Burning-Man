@@ -130,9 +130,9 @@ header .center button a {
    z-index: 2;
 
    overflow-x: hidden;
+   transition: width  1s ;
 
    /* transition: width 1.2s ease-in, heigth 1.2s ease-in; */
-   transition: width 1s ease-in;
 }
 
 .overlay .nav-links a,
@@ -169,7 +169,6 @@ header .center button a {
 
 .aktiv {
    width: 100%;
-
 }
 
 .fa-bars {
