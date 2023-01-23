@@ -8,7 +8,9 @@
 *{
    box-sizing: border-box !important;
 }
-
+body{
+   overflow-x: hidden;
+}
 img {
    width: 100% !important;
    height: 100% !important;
@@ -17,12 +19,14 @@ img {
 }
 
 header {
+  
    background: linear-gradient(105.89deg, rgba(0, 0, 0, 0.37) 5.05%, rgba(0, 0, 0, 0.15) 112.97%), url(./img/header-bg.png);
    background-size: cover;
    background-repeat: no-repeat;
    height: 100vh;
    padding: 20px 100px;
    background-attachment: fixed;
+  
 }
 
 .navbar-brand {
@@ -52,6 +56,16 @@ header nav .nav-link:hover {
    transition: all 100ms ease;
 }
 
+.sticky{
+   position: sticky;
+   top: 10px;
+   background-image: url(./img/header-bg.png);
+   z-index: 999 !important;
+   /* background-position: top top; */
+
+}
+
+/* center */
 .center {
    display: flex;
    flex-direction: column;
@@ -110,7 +124,7 @@ header .center button a {
    text-align: center;
    letter-spacing: 0.1em;
 }
-
+/* overlay */
 .overlay-links {
    display: flex;
    flex-direction: column;
@@ -180,11 +194,9 @@ header .center button a {
 
 
 /* about section  */
-.about {
-   overflow-x: hidden;
-}
 
-.about>h1 {
+
+.about > h1 {
    font-family: 'Anton';
    font-style: normal;
    font-weight: 400;
@@ -216,43 +228,14 @@ header .center button a {
    text-align: justify;
 }
 
-.left-side,
-.right-side {
-   display: flex;
-   flex-direction: column;
-   gap: 30px;
-}
-
-.left-side p {
-   padding-bottom: 50px;
-}
-
-.right-side p {
-   padding-bottom: 20px;
-}
-
-.left-side-imges {
-   display: flex;
-   gap: 20px;
-  flex-basis: 100%;
-   align-items: center;
-}
-.imgs{
-   width: 100%;
-   height: 100%;
+.imgs-left,.imgs-right{
    
-}
-.imgs-left,
-.imgs-right{
-   height: 100%;
-   width: 100%;
    height: 100%;
 }
 
-/* .left-side-imges, .imgs{
-   height: 344px !important;
 
-} */
+
+
 
 
 
@@ -262,7 +245,7 @@ header .center button a {
 
 
 /* footer */
-footer {
+/* footer {
    display: flex;
    gap: 70px;
    padding-top: 144px;
@@ -277,4 +260,36 @@ span {
    line-height: 20px;
    cursor: pointer;
 
+} */
+
+footer{
+  padding: 50px;
+   color: #fff;
+ background-color: rgb(21, 21, 48);
+}
+.left-side-footer p,.left-side-footer h6{
+   padding-bottom: 10px;
+   padding-top: 10px;
+}
+.left-side-footer > .img{
+ width: 30px;
+ padding-bottom: 15px;
+}
+.rigth-side-footer{
+   display: flex;
+  gap: 50px;
+}
+.footer-link{
+   
+   gap: 35px;
+   display: flex;
+   flex-direction: column;
+}
+.footer-link a{
+   color: white;
+}
+.footer-div{
+   margin-top: 30px;
+   display: flex;
+   gap: 60px !important;
 }

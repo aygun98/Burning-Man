@@ -39,3 +39,20 @@ console.log(text.length)
 
  // AOS kitabxanasi
 AOS.init();
+
+
+//scrollTop 
+
+// const ScrollNav = document.querySelector('.navbar ')
+
+window.addEventListener('scroll' , navaScrollVer)
+
+function navaScrollVer() {
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+        document.querySelector('.navbar').classList.add('sticky')
+    }
+    else{
+        document.querySelector('.navbar').classList.remove('sticky')
+    }
+
+}

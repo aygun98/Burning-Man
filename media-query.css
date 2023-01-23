@@ -60,6 +60,7 @@
       header .center button{
          padding: 5px 15px !important;
      }
+     
 }
     
 
@@ -70,3 +71,48 @@
             padding-top: 60px;
         }
      }
+     @media (max-width: 991px){
+        .imgs-left{
+            margin-bottom: 20px !important;
+        }
+    } 
+    @media (max-width: 991px) and (min-width: 768px){
+         .left-side-imges{
+            margin-top: 70px !important;
+        }
+
+     }
+     @media (max-width: 1199px) and (min-width: 991px){
+        .left-side-imges{
+            margin-top: 45px !important;
+        }
+     }
+     @media (max-width: 767px) {
+        .imgs-left,.imgs-right{
+         max-width: 400px;
+         max-height: 500px;
+        
+         }
+     }
+
+      /* footer  */
+      @media (max-width: 1200px){
+        .footer{
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+       
+      }
+      @media (max-width: 991px){ 
+      .left-side-footer{
+        text-align: center;
+    }
+    .footer-link,.img {
+        margin: 0 auto !important;
+    }
+    .footer-div{
+        /* background-color: aqua; */
+        /* width: 100%; */
+        justify-content: center;
+     }
+}
